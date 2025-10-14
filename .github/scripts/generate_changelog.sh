@@ -27,7 +27,6 @@
 set -eo pipefail
 
 GIT_REPO_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"
-echo "Repo URL is: ${GIT_REPO_URL}"
 
 # Get commit messages with commit hash and raw message separated (falls back to all commits if none is provided)
 previous_git_tag="${1}"
