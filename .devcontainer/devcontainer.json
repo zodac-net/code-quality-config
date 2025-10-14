@@ -1,8 +1,8 @@
 {
     "name": "[code-quality-config] Dev Container",
     "build": {
-        "dockerfile": "Dockerfile",
-        "context": ".."
+        "context": "..",
+        "dockerfile": "Dockerfile"
     },
     "customizations": {
         "vscode": {
@@ -34,6 +34,11 @@
                     "prettier.printWidth": 150,
                     "prettier.tabWidth": 4
                 },
+                "[markdown]": {
+                    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+                    "editor.formatOnSave": true,
+                    "markdownlint.configFile": "markdown/.markdownlint.json"
+                },
                 "[shellscript]": {
                     "editor.defaultFormatter": "mkhl.shfmt",
                     "editor.formatOnSave": true
@@ -57,6 +62,7 @@
                 }
             },
             "extensions": [
+                "davidanson.vscode-markdownlint",
                 "dotjoshjohnson.xml",
                 "esbenp.prettier-vscode",
                 "github.vscode-github-actions",
@@ -69,11 +75,12 @@
         }
     },
     "forwardPorts": [],
-    "remoteUser": "root",
-    "workspaceFolder": "/workspace",
     "mounts": [
         "source=${localWorkspaceFolder},target=/workspace,type=bind",
         "source=${localEnv:USERPROFILE}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached",
         "source=${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
-    ]
+    ],
+    "remoteUser": "root",
+    "userEnvProbe": "loginInteractiveShell",
+    "workspaceFolder": "/workspace"
 }

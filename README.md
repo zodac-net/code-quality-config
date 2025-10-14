@@ -10,48 +10,48 @@ Contains the configuration files for various code quality tools for different la
 
 #### [Stylelint](https://stylelint.io/)
 
--   [.stylelintrc.json](./css/.stylelintrc.json)
+- [.stylelintrc.json](./css/.stylelintrc.json)
 
 ### Docker
 
 #### [Hadolint](https://github.com/hadolint/hadolint)
 
--   [.hadolint.yaml](./docker/.hadolint.yaml)
+- [.hadolint.yaml](./docker/.hadolint.yaml)
 
 ### Java
 
 #### [Checkstyle](https://github.com/checkstyle/checkstyle)
 
--   [checkstyle.xml](./java/checkstyle.xml)
--   [checkstyle-suppression.xml](./java/checkstyle-suppression.xml)
+- [checkstyle.xml](./java/checkstyle.xml)
+- [checkstyle-suppression.xml](./java/checkstyle-suppression.xml)
 
 #### [Maven License Plugin](https://mathieu.carbou.me/license-maven-plugin/)
 
--   [license-header-definition.txt](./java/license-header-definition.txt)
+- [license-header-definition.txt](./java/license-header-definition.txt)
 
 #### [PMD](https://pmd.github.io/pmd/pmd_rules_java.html)
 
--   [pmd-ruleset.xml](./java/pmd-ruleset.xml)
+- [pmd-ruleset.xml](./java/pmd-ruleset.xml)
 
 #### [SpotBugs](https://spotbugs.github.io/)
 
--   [spotbugs-include-filter-file.xml](./java/spotbugs-include-filter-file.xml)
--   [spotbugs-exclude-filter-file.xml](./java/spotbugs-exclude-filter-file.xml)
+- [spotbugs-include-filter-file.xml](./java/spotbugs-include-filter-file.xml)
+- [spotbugs-exclude-filter-file.xml](./java/spotbugs-exclude-filter-file.xml)
 
 ### LICENSE
 
 #### [BDS Zero Clause](https://opensource.org/license/0bsd)
 
--   [bsd0.txt](./licenses/bsd0.txt)
+- [bsd0.txt](./licenses/bsd0.txt)
 
 ### Markdown
 
 #### [markdownlint](https://github.com/DavidAnson/markdownlint)
 
--   [.markdownlint.json](./markdown/.markdownlint.json)
+- [.markdownlint.json](./markdown/.markdownlint.json)
 
 ### Python
 
 #### [Ruff](https://docs.astral.sh/ruff/rules/)
 
--   [ruff.toml](./python/ruff.toml)
+- [ruff.toml](./python/ruff.toml)

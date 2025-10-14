@@ -1,0 +1,32 @@
+#!/bin/bash
+_git() {
+	local cur
+
+	COMPREPLY=()
+	cur=${COMP_WORDS[COMP_CWORD]}
+
+	if [ "${COMP_CWORD}" -eq 1 ]; then
+		mapfile -t COMPREPLY < <(compgen -W "\
+            add \
+            branch \
+            checkout \
+            clone \
+            diff \
+            init \
+            log \
+            prune \
+            pull \
+            push \
+            reset \
+            restore \
+            revert \
+            stash \
+            status \
+            tag \
+            version
+        " -- "${cur}")
+	fi
+
+	return 0
+}
+complete -F _git "git"
