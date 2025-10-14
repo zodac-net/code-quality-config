@@ -1,5 +1,5 @@
 {
-    "name": "Config Dev Container",
+    "name": "[code-quality-config] Dev Container",
     "build": {
         "dockerfile": "Dockerfile",
         "context": ".."
@@ -71,5 +71,9 @@
     "forwardPorts": [],
     "remoteUser": "root",
     "workspaceFolder": "/workspace",
-    "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"]
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind",
+        "source=${localEnv:USERPROFILE}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached",
+        "source=${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
+    ]
 }
