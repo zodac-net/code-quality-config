@@ -40,7 +40,7 @@ Contains the configuration files for various code quality tools for different la
 
 ### LICENSE
 
-#### [BDS Zero Clause](https://opensource.org/license/0bsd)
+#### [BSD Zero Clause](https://opensource.org/license/0bsd)
 
 - [bsd0.txt](./licenses/bsd0.txt)
 

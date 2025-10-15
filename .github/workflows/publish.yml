@@ -11,6 +11,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
+      changelog_content: ""
       has_changes: "false"
 
     steps:
