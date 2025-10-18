@@ -65,7 +65,7 @@ jobs:
         if: env.has_changes == 'true'
         uses: ad-m/github-push-action@v0.8.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_RW_PAT }}
           branch: master
           tags: "true"
 
@@ -73,7 +73,7 @@ jobs:
         if: env.has_changes == 'true'
         uses: ncipollo/release-action@v1
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_RW_PAT }}
         with:
           name: v${{ steps.version.outputs.version }}
           tag: ${{ steps.version.outputs.version }}
